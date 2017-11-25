@@ -46,7 +46,7 @@ a:link {
   padding: 1em;
   @media screen and (min-width: $medium) {
     display: block;
-    padding: 1em 1em 1em 0;
+    padding: 1rem 1rem 1rem 0;
   }
 }
 
@@ -175,9 +175,13 @@ nav {
       }
         @media screen and (min-width: $medium) {
           li, .enquire {
+          margin-top: 1rem;
           display: block;
         }
-
+        //last li in nav that is current (not a link)
+        .last {
+padding-bottom: 1rem;
+      }
       }
     }
   }
@@ -246,7 +250,9 @@ nav {
   font-weight: bold;
   z-index: 9999999;
   cursor: pointer;
-
+@media screen and (min-width: $small) {
+  color: #fff;
+}
 }
   .prev,
   .next {

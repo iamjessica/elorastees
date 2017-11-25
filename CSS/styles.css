@@ -33,7 +33,7 @@ a:link {
   @media screen and (min-width: 768px) {
     a:link {
       display: block;
-      padding: 1em 1em 1em 0; } }
+      padding: 1rem 1rem 1rem 0; } }
 
 a.link::after {
   content: " ";
@@ -160,7 +160,10 @@ nav .current:after {
         display: inline-block; }
       @media screen and (min-width: 768px) {
         #container header .header-links li, #container header .header-links .enquire {
-          display: block; } }
+          margin-top: 1rem;
+          display: block; }
+        #container header .header-links .last {
+          padding-bottom: 1rem; } }
   #container #gallery {
     grid-area: gallery; }
     #container #gallery ul {
@@ -209,6 +212,9 @@ nav .current:after {
     font-weight: bold;
     z-index: 9999999;
     cursor: pointer; }
+    @media screen and (min-width: 576px) {
+      #container #close {
+        color: #fff; } }
   #container .prev,
   #container .next {
     cursor: pointer;
