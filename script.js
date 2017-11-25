@@ -14,13 +14,15 @@ modal.classList.remove("modal-open");
 container.style.position = "initial";
 }
 
+
+window.onclick = function (event) {
+	if (event.target == modal) {
+		closeModal();
+	}
+}
+
 close.addEventListener("click", closeModal);
 
-window.addEventListener("keydown",(event) => {
-	if (event.keyCode == 27) {
-  closeModal();
-};
-});
 
 showSlides(slideIndex);
 
