@@ -154,7 +154,6 @@ nav {
       text-align: left;
     }
     .logo-div {
-      line-height: 0;
       @media screen and (min-width: $medium) {
         margin-bottom: 2rem;
       }
@@ -180,7 +179,7 @@ nav {
         }
         //last li in nav that is current (not a link)
         .last {
-padding-bottom: 1rem;
+margin-bottom: 1rem;
       }
       }
     }

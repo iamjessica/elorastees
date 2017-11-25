@@ -142,14 +142,12 @@ nav .current:after {
     @media screen and (min-width: 768px) {
       #container header {
         text-align: left; } }
-    #container header .logo-div {
-      line-height: 0; }
-      @media screen and (min-width: 768px) {
-        #container header .logo-div {
-          margin-bottom: 2rem; } }
-      #container header .logo-div #logo {
-        width: 5rem;
-        margin: auto; }
+    @media screen and (min-width: 768px) {
+      #container header .logo-div {
+        margin-bottom: 2rem; } }
+    #container header .logo-div #logo {
+      width: 5rem;
+      margin: auto; }
     #container header .header-links {
       display: flex;
       flex-direction: column-reverse; }
@@ -163,7 +161,7 @@ nav .current:after {
           margin-top: 1rem;
           display: block; }
         #container header .header-links .last {
-          padding-bottom: 1rem; } }
+          margin-bottom: 1rem; } }
   #container #gallery {
     grid-area: gallery; }
     #container #gallery ul {
