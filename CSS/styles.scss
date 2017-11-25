@@ -50,7 +50,7 @@ a:link {
   }
 }
 
-a::after {
+a.link::after {
   content: " ";
   position: absolute;
   bottom: 1rem;
@@ -59,7 +59,7 @@ a::after {
   width: 0;
   background: transparent;
 }
-a:hover::after {
+a.link:hover::after {
   content: " ";
   position: absolute;
   bottom: 1rem;
@@ -100,7 +100,7 @@ Contact/Social links
   .address{
     display: none;
     @media screen and (min-width: $small) {
-      display: initial;
+      display: inline;
     }
   }
 /* =====================================
@@ -174,7 +174,7 @@ nav {
         display: inline-block;
       }
         @media screen and (min-width: $medium) {
-          li, span {
+          li, .enquire {
           display: block;
         }
 
@@ -238,7 +238,7 @@ nav {
   }
 //modal buttons
 #close {
-  color: #fff;
+  color: #000;
   position: absolute;
   top: .5rem;
   left: .5rem;;
@@ -246,6 +246,7 @@ nav {
   font-weight: bold;
   z-index: 9999999;
   cursor: pointer;
+
 }
   .prev,
   .next {
@@ -270,18 +271,13 @@ nav {
   .prev:hover,
   .next:hover {
     background-color: rgba(0, 0, 0, 0.2);
+
   }
 
   .modal-open {
     display: block;
   }
 
-
-  // class added to stop scrolling when modal open
-  .no-scroll {
-    overflow: hidden;
-    position: fixed;
-  }
 
   /* =====================================
   Footer

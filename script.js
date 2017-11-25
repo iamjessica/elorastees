@@ -6,12 +6,12 @@ var slideIndex = 1;
 
 function openModal() {
 modal.classList.add("modal-open");
-container.classList.add("no-scroll");
+container.style.position = "fixed";
 }
 
 function closeModal() {
 modal.classList.remove("modal-open");
-container.classList.remove("no-scroll");
+container.style.position = "initial";
 }
 
 close.addEventListener("click", closeModal);
